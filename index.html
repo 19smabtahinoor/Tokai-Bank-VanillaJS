@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokai Bank Transaction Dashboard</title>
+    <link rel="shortcut icon" href="images/bank.png" type="image/x-icon">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="max-w-screen-lg mx-auto px-12 my-16">
+        <div class="flex flex-col items-center">
+            <h1 class="text-gray-500 text-3xl text-center">Welcome to my 
+                <span class="text-purple-700 font-semibold">Tokai Bank</span>
+            </h1>
+            <img class="w-24 h-24 object-contain mt-6" src="images/bank.png" alt="logo">
+        </div>
+
+        <!-- login section   -->
+        <section class="w-3/4 mx-auto my-12">
+            <h3 class="text-gray-600 text-2xl mb-6 text-center">Please Login</h3>
+
+            <div>
+                <div class="flex flex-col space-y-6">
+                    <input
+                    id="user_name_field"
+                        class="border border-gray-400 py-3 px-6 w-66 h-12 rounded-lg focus:outline-none focus:border-purple-800 text-gray-600"
+                        type="text" placeholder="Your username (admin)"
+                    />
+                    <input
+                    id="user_password_field"
+                        class="border border-gray-400 py-3 px-6 w-66 h-12 rounded-lg focus:outline-none focus:border-purple-800 text-gray-600"
+                        type="password" placeholder="Password (admin123)"
+                    />
+
+                     <p id="login_error_messege" class="text-red-500 font-semibold flex justify-center"></p>
+
+                    <button id="login_button" class="text-white bg-purple-800 w-24 px-4 py-2 rounded-lg flex justify-center mx-auto border border-purple-500 hover:bg-purple-200 hover:text-purple-800 transition duration-700">Login</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>
